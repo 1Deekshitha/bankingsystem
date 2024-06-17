@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    
+    <!-- style link here -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='mystyle.css') }}">
+    
+
+</head>
+<body>
+    
+    
+    <header class="header">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="">
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#quality">mission</a>
+            <a href="/view-customers">view customer</a>
+            <a href="/transfer-money">send money</a>
+           <a href="#contactus">contact us</a>
+           
+        </nav>
+
+        <div class="icons">
+            <div id="menu-bar" class="fas fa-bars"></div>
+            <a class="contact-btn" href="#">Register</a>
+        </div>
+
+    </header>
+
+    <div id="home"class="home">
+
+        <div class="main-home">
+            <div class="home-inner-content">
+                <div class="home-image">
+                <img src="{{ url_for('static', filename='images/front.jpg') }}" alt="">
+                </div>
+            </div>
+
+            <div class="home-inner-content">
+                <div class="home-text-content">
+                <h1 ><i>Welcome to SureBank!!..</i></h1>
+                <br>
+                <p style="color: black;">a solution for every passionate people to manage their money and financial needs....</p>
+                <br>
+                <a href="#menu">GET STARTED</a><span>
+                <a href="#how"><u>how it works?</u></a> </span>
+                
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="about" class="about">
+        <div class="main-about">
+            <div class="about-content">
+                <div class="about-inner-content">
+                    <img class="myimageabout" src="{{ url_for('static', filename='images/bank2.jpg') }}" alt="">
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-inner-content">
+                    <div class="about-text-content">
+                        <h1>About us</h1>
+                        <p>Welcome to SureBank, where we believe that banking should be more than just transactions – it should be about building relationships, realizing dreams, and empowering communities. With a legacy of excellence spanning 15 years, we are proud to be a trusted financial partner for individuals, families, and businesses across world. </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="quality" class="quality">
+        <div class="main-quality">
+            <div class="main-inner-quality">
+                <div class="quality-content">
+                    <h1>Our Mission</h1>
+                    <p>Established in 2009,SureBank has been committed to serving our customers with integrity, innovation, and personalized service. From humble beginnings to becoming a leading financial institution, our journey has been guided by a singular vision:</p><br>
+                    <ul>
+                        <li><h2>to make banking accessible</h2></li><br>
+                        <li><h2>secure</h2></li><br>
+                        <li><h2> rewarding for everyone</h2></li><br>
+                        
+                    </ul> 
+                </div>
+            </div>
+
+            <div class="main-inner-quality">
+                <div class="quality-content qulity-image">
+                    <img src="{{ url_for('static', filename='images/db1.jpg') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu" class="our-menu-food">
+        <h1>MEET OUR TEAM</h1>
+    <br>
+        <div class="main-menu-food">
+            <div class="inner-menu-food">
+                <div class="menu-food-content">
+                    <img src="{{ url_for('static', filename='images/p1.jpeg') }}" alt="">
+    
+                    <div class="menu-food-text">
+                        <h2>John Doe</h2>
+                        <p> Chief Excecutive Officer(CEO) </p>
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div class="inner-menu-food">
+                <div class="menu-food-content">
+                    <img src="{{ url_for('static', filename='images/p2.jpeg') }}" alt="">
+    
+                    <div class="menu-food-text">
+                        <h2>Jane Smith</h2>
+                        <p> Chief Financial Officer (CFO).</p>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="inner-menu-food">
+                <div class="menu-food-content">
+                    <img src="{{ url_for('static', filename='images/p3.jpeg') }}" alt="">
+    
+                    <div class="menu-food-text">
+                        <h2>Mark Johnson</h2>
+                        <p> Chief Operating Officer (COO). </p>
+                        
+                    </div>
+                </div>
+            </div>
+    </div>
+        
+    <div class="our-menu-food">
+        <h1>OUR SERVICES</h1>
+    <br>
+        <div class="main-menu-food">
+            <div class="inner-menu-food">
+                <div class="menu-food-content">
+                    <img src="{{ url_for('static', filename='images/personal.jpg') }}" alt="">
+    
+                    <div class="menu-food-text">
+                        <h2>Personal Banking</h2>
+                        <br>
+                        <h3>
+                        <ul style="font-size: 1.5rem;">
+                            <li>Checking accounts</li>
+                            <li>Saving accounts</li>
+                            <li>Personal Loans</li>
+                        </ul>
+                        </h3>
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div class="inner-menu-food">
+                <div class="menu-food-content">
+                    <img src="{{ url_for('static', filename='images/db.jpeg') }}" alt="">
+    
+                    <div class="menu-food-text">
+                        <h2>Business Banking</h2>
+                        <br>
+                        <h3>
+                        <ul style="font-size: 1.5rem;">
+                            <li> Business Checking accounts</li>
+                            <li>Business loans</li>
+                            <li>Treasury management</li>
+                        </ul>
+                    </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-menu-food">
+                <div class="menu-food-content">
+                    <img src="{{ url_for('static', filename='images/online.jpg') }}" alt="">
+    
+                    <div class="menu-food-text">
+                        <h2>Digital Banking</h2>
+                        <br>
+                        <h3>
+                        <ul style="font-size: 1.5rem;">
+                            <li> Online Banking</li>
+                            <li>Mobile Banking</li>
+                            <li>Digital wallet</li>
+                        </ul>
+                    </h3>
+                    </div>
+                </div>
+            </div>
+    
+           
+        </div>
+    </div>
+
+    <div class="contactus" id="contactus">
+        <div class="contactus__container bd-grid">
+            <div class="contactus text-content">
+                
+                <h2 >Contact us</h2><br>
+                <h3>At SureBank, we are committed to providing excellent customer service. Whether you have a question, need assistance, or want to provide feedback, we are here to help. Please find below the various ways you can get in touch with us.</h3>
+                <h2>Customer Service</h2><br>
+                <p class="abc">
+            
+                    Toll-Free Number: 1-800-123-4567<br>
+                    International Calls: +1-234-567-8901<br>
+                    Technical Support: techsupportsurebank@gmail.com<br>
+                     Feedback: surebankfeed@gmail.com<br>
+                </p>
+            </div>
+
+          
+                
+        
+        </div>
+    </div>
+</main>
+    <div class="before">
+        <img src="{{ url_for('static', filename='images/footer.png') }}" alt="">
+    </div>
+
+    <div class="footer">
+        <div class="main-footer">
+            <div class="footer-logo"><img src="{{ url_for('static', filename='images/footerlogo.png') }}" alt=""></div>
+        </div>
+
+        <footernav class="footer-navbar">
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">services</a>
+            <a href="#">view customer</a>
+            <a href="#">break</a>
+        </footernav>
+
+    </div>
+<script src="https://unpkg.com/scrollreveal"></script>
+
+
+
+<script src="myscript.js"></script>
+</body>
+</html>
